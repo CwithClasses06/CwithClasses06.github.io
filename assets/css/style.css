@@ -25,11 +25,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-#projectDisplay p{
-  font-family: "Raleway", sans-serif !important;
-  
-}
-
 button.btn-hover-animation {
   color: #149ddd;
   transition: background-color 0.3s, color 0.3s;
@@ -60,7 +55,7 @@ button.btn-hover-animation:hover {
   opacity: 0;
   right: 15px;
   bottom: 15px;
-  z-index: 996;
+  z-index: 9999;
   background: #149ddd;
   width: 40px;
   height: 40px;
@@ -83,7 +78,6 @@ button.btn-hover-animation:hover {
   visibility: visible;
   opacity: 1;
 }
-
 
 
 #header {
@@ -270,7 +264,7 @@ button.btn-hover-animation:hover {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  min-width: 1px;
   
 }
 
@@ -785,14 +779,137 @@ section {
   }
 }
 
-@media (max-width: 1235px) {
-  #introNamedesc{
+@media (max-width: 1226px) and (min-width: 1200px) {
+  .hero-container{
+    border: 1px solid red;
     margin-left: 20%;
   }
 
-  #introNamedesc #firstp,
-  #introNamedesc #firsth1{
-    font-size: 80px;
+  .hero-container .name{
+    font-size: 80px!important;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 446px){
+ 
+
+  .contactinfo h5,
+  .contactinfo div span,
+  .contactinfo .icons{
+    
+    font-size: 15px;
+  }
+
+  .contactinfo .icons{
+    margin-left: 28%;
+    margin-top: 5%;
+  }
+
+
+}
+
+@media (max-width: 445px) and (min-width: 390px){
+ 
+
+  .contactinfo h5,
+  .contactinfo div span,
+  .contactinfo .icons{
+    
+    font-size: 13px;
+  }
+
+  .contactinfo div span{
+    margin-left: 3%;
+  }
+
+  .contactinfo .icons{
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+
+
+}
+
+@media (max-width: 390px) and (min-width: 370px){
+ 
+
+  .contactinfo h5,
+  .contactinfo div span,
+  .contactinfo .icons{
+    
+    font-size: 13px;
+  }
+
+  .contactinfo h5{
+    font-size: 11px;
+  }
+
+  .contactinfo div span{
+    margin-left: -10%;
+  }
+
+  .contactinfo .icons{
+    margin-left: 13%;
+    margin-top: 5%;
+  }
+
+
+}
+
+
+@media (max-width: 370px) and (min-width: 342px){
+ 
+
+  .contactinfo h5,
+  .contactinfo div span,
+  .contactinfo .icons{
+    
+    font-size: 10px;
+  }
+
+  .contactinfo h5{
+    font-size: 11px;
+  }
+
+  .contactinfo div span{
+    margin-left: -3%;
+  }
+
+
+  .contactinfo .icons{
+    margin-left: 15%;
+    margin-top: 5%;
   }
 
 }
+
+
+@media (max-width: 342px) and (min-width: 200px){
+ 
+
+  .contactinfo h5,
+  .contactinfo div span,
+  .contactinfo .icons{
+    
+    font-size: 8px;
+  }
+
+  .contactinfo h5{
+    
+    font-size: 8px;
+  }
+
+  .contactinfo div span{
+    margin-top: -100px;
+    margin-left: -12%;
+  }
+
+
+  .contactinfo .icons{
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 40%;
+  }
+
+}
+
